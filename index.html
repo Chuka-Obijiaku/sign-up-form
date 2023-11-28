@@ -4,45 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="section flex">
-        <div class="bg-[url('https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA')] flex-1 min-h-screen">
-            <div class="flex h-300px">
-                <img src="./images/odin-lined.png" alt="Odin Logo">
-                <h1>ODIN</h1>
+    <div class="section">
+        <div class="left-banner">
+            <div class="left-banner__logo-container">
+                <img class="logo" src="./images/odin-lined.png" alt="Odin Logo">
+                <h1 class="left-banner__heading">ODIN</h1>
             </div>
         </div>
-        <div class="bg-white flex flex-col justify-center flex-1 min-h-screen px-24 box-border">
-            <p class="my-16 font-bold">This is not a real online service! You know you need something
-                likethis in your life to help you realize your deepest dreams. 
-                Sign up now to get started.
-
-                You know you want to.</p>
-            
-            <form action="" method="post" class="flex">
-                <div>
-                    <ul>
-                        <li><label for="first-name">First Name</label></li>
-                        <li><input type="text" id="first-name"></li>
-                        <li><label for="mail">Email</label></li>
-                        <li><input type="email" id="mail"></li>
-                        <li><label for="pswrd">Password</label></li>
-                        <li><input type="password" id="pswrd"></li>
-                    </ul>
-                </div>
+        <div class="form-side">
+            <div class="container">
+                <p class="form-side__text">This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams. <br>
+                    Sign up now to get started.
+                </p>
     
-                <div>
-                    <ul>
-                        <li><label for="last-name">Last Name</label></li>
-                        <li><input type="text" id="last-name"></li>
-                        <li><label for="phone">Phone Number</label></li>
-                        <li><input type="number" id="phone"></li>
-                        <li><label for="pswrd-conf">Password</label></li>
-                        <li><input type="password" id="pswrd-conf"></li>
-                    </ul>
-                </div>               
+                <p class="form-side__text">You know you want to.</p>
+
+            </div>
+            
+            <form action="" method="post" class="">
+                <div class="form-border">
+                    <h2>Lets Do This!</h2>
+                    <div class="form-content">
+                        <div class="form-col">
+                            <ul>
+                                <li><label for="first-name">First Name</label></li>
+                                <li><input type="text" id="first-name"></li>
+                                <li><label for="mail">Email</label></li>
+                                <li><input type="email" id="mail"></li>
+                                <li><label for="pswrd">Password</label></li>
+                                <li><input type="password" id="pswrd"></li>
+                            </ul>
+                        </div>
+            
+                        <div class="form-col">
+                            <ul>
+                                <li><label for="last-name">Last Name</label></li>
+                                <li><input type="text" id="last-name"></li>
+                                <li><label for="phone">Phone Number</label></li>
+                                <li><input type="number" id="phone"></li>
+                                <li><label for="pswrd-conf">Password</label></li>
+                                <li><input type="password" id="pswrd-conf"></li>
+                            </ul>
+                        </div>   
+    
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                    <button type="submit">Create Account</button> 
+                    <p>Already have an account? Log in</p>           
+                </div>
 
 
 
